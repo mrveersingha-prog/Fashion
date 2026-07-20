@@ -1,72 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
+    background:#f5f5f5;
+    color:#222;
 }
 
 header{
-background:#000;
-color:#fff;
-text-align:center;
-padding:20px;
+    background:#111;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    position:sticky;
+    top:0;
 }
 
 .logo{
-width:90px;
-border-radius:50%;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd700;
 }
 
 .hero{
-text-align:center;
-padding:30px;
+    text-align:center;
+    padding:60px 20px;
+    background:#222;
+    color:white;
 }
 
-#search{
-width:80%;
-padding:12px;
-border-radius:8px;
-border:1px solid #ccc;
+.hero input{
+    width:300px;
+    max-width:90%;
+    padding:12px;
+    margin-top:20px;
+    border-radius:8px;
+    border:none;
 }
 
 .products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:30px;
 }
 
 .card{
-background:#fff;
-padding:20px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    text-align:center;
+    padding:15px;
 }
 
 .card img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:10px;
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
 }
 
-button{
-background:#000;
-color:#fff;
-padding:12px 20px;
-border:none;
-border-radius:8px;
-cursor:pointer;
+.card button{
+    background:#111;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:10px;
 }
 
-button:hover{
-background:gold;
-color:#000;
+.card button:hover{
+    background:#ffd700;
+    color:#111;
 }
 
 footer{
-background:#111;
-color:#fff;
-text-align:center;
-padding:20px;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
 }
