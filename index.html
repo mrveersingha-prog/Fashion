@@ -203,10 +203,13 @@ function searchProducts() {
 
 function orderProduct(product) {
 
-    alert("Thank you for your interest in " + product + "!");
+    let phone = "916913705689";
+
+    let message = "Hello Abhi Fashion, I want to order: " + product;
+
+    let whatsappURL =
+        "https://wa.me/" + phone +
+        "?text=" + encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
 }
-
-</script>
-
-</body>
-</html>
